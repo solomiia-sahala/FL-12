@@ -1,0 +1,413 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+ /* :root {
+	--bg-color--dark: #0b192f;
+	--bg-color--header: #024161;
+	--link: #fff;
+	--link--hover: #1f52a4;
+	--bg-footer-color: #024161;
+} */
+
+body {
+	font-family: roboto;
+	background-color: #0b192f;
+}
+
+.post-1 {
+	background: #9d27b0;
+}
+
+.post-2 {
+	background: #9bb800;
+}
+
+.post-3 {
+	background: #ed5120;
+}
+
+.post-4 {
+	background: #9d27b0;
+}
+
+.post-5 {
+	background: #2d95bb;
+}
+
+
+/* Your styles go here */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 52px;
+	background-color: #024161;
+}
+
+.header-logo {
+	width: 70%;
+	float: left;
+	display: inline;
+	padding-left: 10px;
+	padding-top: 12px;
+	color: white;
+	letter-spacing: -0.9px;
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+.header-logo span {
+	color: rgb(248, 99, 124);
+}
+
+.header-menu {
+	width: 29%;
+	float: left;
+	display: inline;
+}
+
+.header-menu li {
+	display: inline-block;
+	width: 23%;
+	float: left;
+	text-align: center;
+	line-height: 52px;
+}
+
+.header-menu a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li:hover {
+	background: #1f52a4;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.title-0 {
+	background-image: url('../img/post0.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	margin-top: 15px;
+	background-position: bottom;
+	color: #fff;
+}
+
+h1 {
+	position: relative;
+	top: 230px;
+	left: 45px;
+	font-size: 58px;
+	word-spacing: 3px;
+	font-weight: lighter;
+}
+
+.title-0 p {
+	position: absolute;
+	width: 65%;
+	left: 45px;
+	top: 380px;
+	font-size: 19px;
+	font-weight: lighter;
+	line-height: 33px;
+}
+
+article {
+	margin: 10px;
+}
+
+@media (min-width: 769px) {
+	.article-section {
+		display: flex;
+		width: 72%;
+	}
+	.all-posts {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.post {
+		display: flex;
+	}
+	.post-text {
+		position: relative;
+	}
+	.post-text:hover,
+	.img:hover {
+		opacity: 0.7;
+		cursor: pointer;
+	}
+	.post-text h2 {
+		width: 70%;
+		font-size: 43px;
+		font-weight: lighter;
+		line-height: 35px;
+		padding-bottom: 35px;
+	}
+	.post-text {
+		color: #fff;
+		font-weight: lighter;
+		font-size: 19px;
+		line-height: 25px;
+		padding: 20px 40px 30px;
+		width: 70%;
+	}
+	.date {
+		position: absolute;
+		right: 10px;
+		top: 20px;
+		font-size: 40px;
+		font-weight: lighter;
+		color: rgb(218, 218, 218);
+	}
+	.date span {
+		font-size: 25px;
+	}
+	.img {
+		width: 84%;
+	}
+	.img img {
+		display: block;
+		background-size: cover;
+		width: 100%;
+		height: 310px;
+	}
+	.post:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+	.post:nth-child(even) .date {
+		left: 20px;
+	}
+	.post:nth-child(even) h2 {
+		text-align: right;
+		padding-left: 125px;
+	}
+}
+
+.article-wrap-news {
+	width: 27%;
+	position: absolute;
+	left: 73%;
+	bottom: -116%;
+}
+
+.news img {
+	display: block;
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+}
+
+.article-text {
+	background-color: #fff;
+	height: 210px;
+	padding: 30px 40px 30px 40px;
+}
+
+.article-text h3 {
+	font-size: 33px;
+	font-weight: lighter;
+	line-height: 30px;
+	word-spacing: 5px;
+	padding-bottom: 10px;
+}
+
+.article-text p {
+	font-size: 19px;
+	font-weight: lighter;
+	line-height: 24px;
+}
+
+footer {
+	width: 100%;
+	height: 42px;
+	background-color: #024161;
+	font-size: 10px;
+	color: rgba(197, 197, 197, 0.877);
+	padding-top: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+}
+
+.footer-info {
+	width: 90%;
+	float: left;
+	display: inline;
+	padding-left: 10px;
+}
+
+.footer-author {
+	width: 9%;
+	float: left;
+	display: inline;
+}
+
+@media (max-width: 768px) {
+	header {
+		height: 120px;
+	}
+	.header-menu {
+		display: none;
+	}
+	.header-logo {
+		padding-left: 37%;
+		padding-top: 32px;
+	}
+	.button {
+		padding-left: 48%;
+		padding-top: 20px;
+	}
+	.button div {
+		width: 20px;
+		height: 2px;
+		background-color: #fff;
+		margin: 4px 0;
+	}
+	.button div:first-child {
+		height: 3px;
+	}
+	.button div:last-child {
+		height: 1px;
+	}
+	.title-0 {
+		width: 100%;
+		height: 310px;
+		background-position: center;
+		background-size: auto;
+	}
+	h1 {
+		width: 100%;
+		position: relative;
+		top: 50px;
+		left: 45px;
+		font-size: 66px;
+		word-spacing: 3px;
+		font-weight: lighter;
+	}
+	.title-0 p {
+		position: absolute;
+		width: 83%;
+		left: 45px;
+		top: 350px;
+		font-size: 15px;
+		font-weight: lighter;
+		line-height: 22px;
+		opacity: 0.7;
+	}
+	.article-section {
+		display: flex;
+		width: 70%;
+	}
+	.all-posts {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	.img img {
+		height: 220px;
+		width: 100%;
+		float: left
+	}
+	.post {
+		position: relative;
+		color: #fff;
+		font-weight: lighter;
+	}
+	.post h2 {
+		text-align: left;
+		padding-bottom: 20px;
+		font-size: 47px;
+		font-weight: lighter;
+		padding: 15px;
+	}
+	.post p {
+		font-size: 15px;
+		padding: 15px;
+	}
+	.date {
+		position: absolute;
+		top: 0px;
+		right: 2px;
+		opacity: 0.7;
+	}
+	.article-wrap-news {
+		position: absolute;
+		width: 27%;
+		top: 64%;
+		right: 13px;
+	}
+	.news {
+		width: auto;
+	}
+	.news img {
+		width: 100%;
+		height: 130px;
+	}
+	.article-text h3 {
+		line-height: 1em;
+		font-size: 13px;
+		padding-bottom: 5px;
+	}
+	.article-text p {
+		width: 100%;
+		font-size: 11px;
+		line-height: 1em;
+	}
+	.footer-wrap {
+		width: 100%;
+	}
+	.footer-info {
+		position: relative;
+		font-size: 7px;
+		line-height: 1em;
+		top: 0;
+		text-align: center;
+	}
+	.footer-author {
+		position: relative;
+		font-size: 7px;
+		line-height: 1em;
+		bottom: 0px;
+		right: -45%;
+	}
+	@media (max-width: 480px) {
+		.title-0 h1 {
+			font-size: 46px;
+		}
+		.title-0 p {
+			font-size: 13px;
+		}
+		.article-section {
+			width: 100%;
+		}
+		.article-wrap-news {
+			width: 100%;
+			position: relative;
+			left: 0;
+		}
+		.article-text {
+			height: 60px;
+			padding-bottom: 40px;
+			line-height: 1.7em;
+		}
+		.article-text h3 {
+			font-size: 19px;
+		}
+		.news img {
+			height: 190px;
+		}
+	}
+}
