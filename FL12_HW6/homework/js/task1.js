@@ -11,7 +11,6 @@ if (isNaN(a) || isNaN(b) || isNaN(c)) {
     console.log('Invalid input data');
 } else {
     discr = b * b - four * (a * c);
-    console.log(discr);
 
     if (discr > 0 ) {
         value1 = ((-b + Math.sqrt(discr)) / two * a).toFixed(1);
