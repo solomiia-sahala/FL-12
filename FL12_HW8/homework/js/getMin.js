@@ -7,4 +7,4 @@ function getMin () {
     }
     return minValue;
 }
-console.log(getMin(3,0,-3));
+getMin(3,0,-3);
