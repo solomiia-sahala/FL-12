@@ -3,4 +3,4 @@ function isBigger (x, y) {
     return result;
 }
 
-console.log(isBigger(5,-3));
+isBigger(5,-3);
