@@ -3,4 +3,4 @@ function isSmaller(x, y) {
     return result;
 }
 
-console.log(isSmaller(12,6));
+isSmaller(12,6);
