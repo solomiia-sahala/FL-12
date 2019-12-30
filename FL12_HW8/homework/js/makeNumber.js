@@ -10,5 +10,5 @@ function makeNumbers (arg) {
  return result;
 }
 
-console.log(makeNumbers('skdb989ks'));
+makeNumbers('skdb989ks');
 
