@@ -10,7 +10,7 @@ function pipe() {
     return x
 }
 
-console.log(pipe(1, addOne));
+pipe(1, addOne);
 
   
 
