@@ -109,16 +109,8 @@ getPastDay(date, 365);
      let year = date.getFullYear();
      let month = date.getMonth();
      let day = date.getDate();
-     let hours = date.getHours();
-     let minutes = date.getMinutes();
-
-     if (hours <= 9) {
-         hours = `0${hours}`;
-     }
-
-     if (minutes <= 9) {
-         minutes = `0${minutes}`;
-     }
+     let hours = date.getHours() < 10 ? `0${date.getHours()}`: date.getHours();
+     let minutes = date.getMinutes() < 10 ? `0${date.getMinutes()}`: date.getMinutes();
      return `${year}/${month}/${day} ${hours}:${minutes}`;
  }
 
