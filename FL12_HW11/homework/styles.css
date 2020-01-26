@@ -1,0 +1,22 @@
+/* Todo: your styles go here*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin-left: 20px;
+}
+
+i {
+    color: rgba(192, 192, 29, 0.836);
+}
+
+.empty {
+    font-style: italic;
+}
+
+.file {
+    color: rgb(148, 151, 151);
+}
